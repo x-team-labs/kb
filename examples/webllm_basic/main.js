@@ -22,9 +22,7 @@ llmWorker.onmessage = (event) => {
             if (error) {
                 console.error('LLM Error:', error);
                 appendMessage(`Error: ${error}`, 'llm');
-            } else {
-                //appendMessage(data.text, 'llm');
-            }
+            } 
             break;
         default:
             console.warn('Unknown message type:', type);
