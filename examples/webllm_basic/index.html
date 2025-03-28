@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebLLM Basic Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>WebLLM Basic Example</h1>
+        <div class="chat-container">
+            <div id="chat-messages" class="messages">
+                <div class="status-message"></div>
+            </div>
+            <form id="chat-form">
+                <input type="text" name="message" placeholder="Type your message..." required>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <div class="info">
+            This is a simple example and can be greatly improved on. A web worker is great for a simple task like this,
+            but you might like to use a service worker instead for cross page communication and avoiding loading the LLM over and over again.
+        </div>
+        <div class="info">
+            This example includes some basic history, but this can be improved by using techniques like sliding context windows, summarization, and other techniques.
+            Short is, you will eventually hit the context window limit and need to handle this.
+        </div>
+        <div class="info">
+            Enjoy! Looking forward to seeing what you build! Hit me up on Slack if you have any questions. --- @rheinardkorf
+        </div>
+    </div>
+    <!-- Load the main.js file. We are using modules to get ES6+  features. -->
+    <script src="main.js" type="module"></script>
+</body>
+</html> 
